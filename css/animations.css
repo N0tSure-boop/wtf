@@ -1,0 +1,146 @@
+/* ========================================
+   animations.css - 动画效果
+   ======================================== */
+
+/* 背景流动效果 */
+@keyframes flow {
+    0% { transform: translateX(0) rotate(0deg); }
+    100% { transform: translateX(calc(100vw + 200px)) rotate(360deg); }
+}
+
+/* 语言栏浮动动画 */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* 淡入上升动画 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 标题闪光效果 */
+@keyframes shine {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* 跳跃文字动画 */
+@keyframes jump {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* 副标题下划线滑入 */
+@keyframes slideIn {
+    to { transform: translateX(0); }
+}
+
+/* 淡入动画 */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* 缩放进入 */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* 时间轴线条生长 */
+@keyframes lineGrow {
+    from { height: 0; }
+    to { height: 100%; }
+}
+
+/* 时间轴项目出现 */
+@keyframes itemAppear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 脉搏效果 */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* 旗帜摆动 */
+@keyframes flagWave {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+/* 卡片从右滑入 */
+@keyframes slideInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* 模块出现 */
+@keyframes moduleAppear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 面部轮廓轻微脉动 */
+@keyframes gentlePulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+/* 高度增长动画 */
+@keyframes heightGrow {
+    from { height: 0; }
+    to { height: 100%; }
+}
+
+/* 按钮发光效果 */
+@keyframes buttonGlow {
+    0%, 100% { box-shadow: 0 5px 15px rgba(197,48,48,0.3); }
+    50% { box-shadow: 0 5px 20px rgba(197,48,48,0.6); }
+}
+
+/* 字母跳跃 */
+@keyframes letterJump {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+/* VS圆圈旋转 */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 闪烁效果 */
+@keyframes shimmer {
+    100% { transform: translateX(100%); }
+}
+
+/* 波纹效果 (由JS动态添加) */
+@keyframes ripple {
+    0% { transform: translate(-50%, -50%) scale(0); opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(2); opacity: 0; }
+}
